@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  unit_of_measurement: MyString
+  quantity: 1
+  description: MyText
+  damage: false
+  balance: one
+  product_kind: one
+  user: one
+
+two:
+  code: MyString
+  unit_of_measurement: MyString
+  quantity: 1
+  description: MyText
+  damage: false
+  balance: two
+  product_kind: two
+  user: two

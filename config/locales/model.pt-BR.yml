@@ -1,0 +1,18 @@
+"pt-BR":
+  activerecord:
+    models:
+      product: Produto
+    attributes:
+      product:
+        code: "Codigo"
+        unit_of_measurement: "Unidade de medida"
+        quantity: "Quantidade"
+        description: "Descrição"
+        damage: "Avaria"
+        balance_id: "Balanço"
+        product_kind_id: "Categoria"
+        user_id: "Usuario"
+        true: "Sim"
+        false: "Não" 
+        
+
