@@ -67,7 +67,7 @@
   <div class="form-group">
     <%= f.label :user_id, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= collection_select(:product, :user_id, User.all, :id, :name, {:include_blank => true}, {:class => 'form-control'}) %>
+      <input type="text" class="form-control" id="usr" value="<%= current_user.name %>" disabled>
     </div>
     <%=f.error_span(:user_id) %>
   </div>

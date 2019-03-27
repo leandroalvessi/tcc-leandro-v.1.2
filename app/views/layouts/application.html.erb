@@ -38,6 +38,14 @@
                 <li><a href="#">Missão</a></li>
               </ul>
             </li>
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to('Sair', destroy_user_session_path,  :method=>'delete') %>
+              <% else %> 
+                <li> <%= link_to('Login', new_user_session_path) %> </li>  
+                <li> <%= link_to('Register', new_user_registration_path) %> </li> 
+              <% end %>
+            </li>
           </ul>
           <!-- 
           <ul class="nav navbar-nav navbar-right">
