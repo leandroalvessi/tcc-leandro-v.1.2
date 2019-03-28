@@ -13,3 +13,45 @@
       save: "Salvar %{model}"
       new: "Novo %{model}"
       delete: "Deletar %{model}"
+  devise:
+    failure:
+      unauthenticated: 'Você precisa logar-se ou cadastrar-se antes de continuar.'
+      unconfirmed: 'Você precisa confirmar sua conta antes de continuar.'
+      locked: 'Sua conta está bloqueada.'
+      invalid: 'E-mail ou senha inválida.'
+      invalid_token: 'Chave de autenticação inválida.'
+      timeout: 'Sua sessão espirou, por favor logue-se novamente para continuar.'
+      inactive: 'Sua conta ainda não foi ativada.'
+    sessions:
+      signed_in: 'Logado com sucesso.'
+      signed_out: 'Deslogado com sucesso.'
+      sign_in: 'Entrar'
+      sign_up: 'Inscrever-se'
+    passwords:
+      send_instructions: 'Você receberá um email com instruções sobre a recuperação da senha em alguns minutos.'
+      updated: 'Sua senha foi alterada com sucesso. Agora você está logado.'
+      send_me_reset_password_instructions: 'envie-me as instruções de senha redefinidas'
+      forgot_your_password: 'Esqueceu sua senha'
+    confirmations:
+      send_instructions: 'Você receberá um email com instruções sobre como recuperar sua conta em alguns minutos.'
+      confirmed: 'Sua conta foi confirmada com sucesso. Agora você está logado.'
+      didn_t_receive_confirmation_instructions: 'Não recebeu instruções de confirmação'
+      didn_t_receive_unlock_instructions: 'Não recebeu instruções de desbloqueio'
+      sign_in_with_provider: 'Entre com provedor'
+      resend_confirmation_instructions: 'Reenviar instruções de confirmação'
+    registrations:
+      signed_up: 'Você se cadastrou com sucesso. Se habilitado, a confirmação será enviada para seu e-mail.'
+      updated: 'Você atualizou sua conta com sucesso.'
+      destroyed: 'Tchau! Sua conta foi cancelada com sucesso.'
+    unlocks:
+      send_instructions: 'Você receberá um e-mail com instruções sobre como desbloquear sua conta em alguns minutos.'
+      unlocked: 'Sua conta foi desbloqueada com sucesso. Você agora está logado.'
+    mailer:
+      confirmation_instructions:
+        subject: 'Informações de confirmação'
+      reset_password_instructions:
+        subject: 'Informações de recuperação de senha'
+      unlock_instructions:
+        subject: 'Informações de desbloqueio' 
+    shared:
+      minimum_password_length: 'Comprimento mínimo da senha'             

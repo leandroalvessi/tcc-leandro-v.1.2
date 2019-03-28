@@ -5,7 +5,13 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    #@products = Product.all
+    #@products = Product.where(user_id: current_user.id)
+    if current_user.kind =='Gerente'     
+      @products = Product.all
+    else
+      @products = Product.where(user_id: current_user.id)
+    end  
   end
 
   # GET /products/1

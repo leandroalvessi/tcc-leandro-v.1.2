@@ -22,6 +22,7 @@ gem 'rails-i18n', '~> 5.1', '>= 5.1.2'
 gem 'validates_timeliness'
 gem 'devise'
 gem 'cancancan'
+gem 'devise-bootstrap-views', '~> 1.0'
 
 
 # Use CoffeeScript for .coffee assets and views
