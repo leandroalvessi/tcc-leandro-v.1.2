@@ -47,12 +47,11 @@
                             :method => :delete,
                             :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                             :class => 'btn btn-xs btn-danger' %>
-                <% end %>
-                
-
+                <% end %> 
               </td>
             </tr>
           <% end %>
+          <%= paginate @products, outer_window: 3 %>
     </tbody>
   </table>
 </div>

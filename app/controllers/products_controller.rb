@@ -5,12 +5,11 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    #@products = Product.all
-    #@products = Product.where(user_id: current_user.id)
-    if current_user.kind =='Gerente'     
-      @products = Product.all
+    if current_user.kind == 'Gerente'     
+      #@products = Product.paginate(:page=>params[:page],per_page:10)
+      @products = Product.order(:id).page(params[:page]).per(10)
     else
-      @products = Product.where(user_id: current_user.id)
+      @products = Product.where(user_id: current_user.id).order(:id).page(params[:page]).per(10)
     end  
   end
 

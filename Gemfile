@@ -23,6 +23,7 @@ gem 'validates_timeliness'
 gem 'devise'
 gem 'cancancan'
 gem 'devise-bootstrap-views', '~> 1.0'
+gem 'kaminari'
 
 
 # Use CoffeeScript for .coffee assets and views
