@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'tcc/tcc'
   get 'pages/erro'
   devise_for :users
   mount RailsAdmin::Engine => '/entrar', as: 'rails_admin'
