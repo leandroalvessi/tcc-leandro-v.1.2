@@ -21,10 +21,12 @@ class ProductsController < ApplicationController
   # GET /products/new
   def new
     @product = Product.new
+    @balancoAtivo = balancoAtivo
   end
 
   # GET /products/1/edit
   def edit
+    @balancoAtivo = balancoAtivo
   end
 
   # POST /products
@@ -66,6 +68,10 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def balancoAtivo
+    Balance.where(status: "Ativo")
+  end  
 
   private
     # Use callbacks to share common setup or constraints between actions.
