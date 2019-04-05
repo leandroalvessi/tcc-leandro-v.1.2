@@ -3,7 +3,7 @@ class Product < ApplicationRecord
   belongs_to :product_kind
   belongs_to :user
 
-  validates :code, :unit_of_measurement, :quantity, :description, presence: true
+  validates :code, :unit_of_measurement, :quantity, presence: true
 
   validates :quantity, format: { with: /\A[+\-]?\d+\z/,        
     message: "é Permitido apanas numeros"}   

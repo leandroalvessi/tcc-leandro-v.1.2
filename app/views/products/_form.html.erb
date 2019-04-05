@@ -1,3 +1,4 @@
+<% if current_user.status == 'Ativo' %>
 <%= form_for @product, :html => { :class => "form-horizontal product" } do |f| %>
 
   <% if @product.errors.any? %>
@@ -18,31 +19,35 @@
   <div class="form-group">
     <%= f.label :code, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :code, :class => 'form-control' %>
+      <%= f.text_field :code, :required => true, :class => 'form-control' %>
     </div>
     <%=f.error_span(:code) %>
   </div>
+  
   <div class="form-group">
     <%= f.label :unit_of_measurement, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.select :unit_of_measurement, option_for_unidade(@product.unit_of_measurement), {:include_blank => true}, {:class => 'form-control'} %>
+      <%= f.select :unit_of_measurement, option_for_unidade(@product.unit_of_measurement), {}, {:class => 'form-control', :required => true} %>
     </div>
     <%=f.error_span(:unit_of_measurement) %>
   </div>
+
   <div class="form-group">
     <%= f.label :quantity, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.number_field :quantity, :class => 'form-control' %>
+      <%= f.number_field :quantity, :required => true, :class => 'form-control' %>
     </div>
     <%=f.error_span(:quantity) %>
   </div>
+
   <div class="form-group">
     <%= f.label :description, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_area(:description, :class => 'form-control', size: '50x5') %>
+      <%= f.text_area(:description, :required => true, :class => 'form-control', size: '50x5') %>
     </div>
     <%=f.error_span(:description) %>
   </div>
+
   <div class="form-group">
     <%= f.label :damage, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
@@ -50,21 +55,24 @@
     </div>
     <%=f.error_span(:damage) %>
   </div>
+
   <div class="form-group">
     <%= f.label :balance_id, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= collection_select(:product, :balance_id, @balancoAtivo, :id, :name, {:include_blank => true}, {:class => 'form-control'}) %>
+      <% teste = @balancoAtivo %>
+      <%= collection_select(:product, :balance_id, @balancoAtivo, :id, :name, {}, {:class => 'form-control'}) %>
     </div>
     <%=f.error_span(:balance_id) %>
   </div>
+
   <div class="form-group">
     <%= f.label :product_kind_id, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= collection_select(:product, :product_kind_id, ProductKind.all, :id, :name, {:include_blank => true}, {:class => 'form-control'}) %>
+      <%= collection_select(:product, :product_kind_id, ProductKind.all, :id, :name, {}, {:class => 'form-control', :required => true}) %>
     </div>
     <%=f.error_span(:product_kind_id) %>
   </div>
-
+  
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
       <%= f.submit 'Salvar', :class => 'btn btn-primary' %>
@@ -75,10 +83,11 @@
 
   <div class="form-group" style="visibility: hidden">
     <%= f.label :user_id, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <% @product.user_id = current_user.id %>
-      <%= collection_select(:product, :user_id, User.all, :id, :name, {:include_blank => true}, {:class => 'form-control'})  %> 
-    </div>
+      <div class="col-lg-10">
+        <% @product.user_id = current_user.id %>
+        <%= collection_select(:product, :user_id, User.all, :id, :name, {:include_blank => true}, {:class => 'form-control'})  %> 
+      </div>
     <%=f.error_span(:user_id) %>
   </div>
+  <% end %>
 <% end %>

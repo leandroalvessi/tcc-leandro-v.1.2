@@ -8,17 +8,12 @@ class Ability
       can :dashboard, :all
       can :access, :rails_admin 
       #can [:create, :read, :update, :destroy], Balance
-      can :read, Balance, status: :Ativo
-      can :read, Product, user_id: user.id
-      can :read, ProductKind
-      can :read, User
+      can :read, :all
     elsif user.kind == 'Usuário' && user.status == 'Ativo'
       can :dashboard, :all
       can :access, :rails_admin
       #can [:create, :read, :update, :destroy], Balance
-      can :read, Balance, status: :Ativo
-      can :read, ProductKind
-      can :read, User
+      can :read, :all
       can [:create, :read], Product, user_id: user.id
     else
       can :dashboard, :all
