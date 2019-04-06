@@ -24,7 +24,7 @@
             <tr>
               <td><%= link_to product.id, product_path(product) %></td>
               <td><%= product.code %></td>
-              <td><%= product.unit_of_measurement %></td>
+              <td><%= option_for_unidade_find(product.unit_of_measurement) %></td>
               <td><%= product.quantity %></td>
               <td><%= product.description %></td>
               <td><%= avaria_boolean(product.damage) %></td>

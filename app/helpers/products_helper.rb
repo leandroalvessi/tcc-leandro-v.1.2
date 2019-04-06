@@ -63,7 +63,11 @@ module ProductsHelper
 
     def option_for_unidade (selected)
         options_for_select(UNIDADE_MEDIDA, selected)
-    end    
+    end   
+    
+    def option_for_unidade_find (selected)
+        UNIDADE_MEDIDA.select{ |x| x[1] == selected }.first.first
+    end 
 
     def avaria_boolean(boolean)
         boolean ? 'Sim' : 'Não'

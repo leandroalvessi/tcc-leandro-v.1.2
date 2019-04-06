@@ -7,7 +7,7 @@
   <dt><strong><%= model_class.human_attribute_name(:code) %>:</strong></dt>
   <dd><%= @product.code %></dd>
   <dt><strong><%= model_class.human_attribute_name(:unit_of_measurement) %>:</strong></dt>
-  <dd><%= @product.unit_of_measurement %></dd>
+  <dd><%= option_for_unidade_find(@product.unit_of_measurement) %></dd>
   <dt><strong><%= model_class.human_attribute_name(:quantity) %>:</strong></dt>
   <dd><%= @product.quantity %></dd>
   <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>

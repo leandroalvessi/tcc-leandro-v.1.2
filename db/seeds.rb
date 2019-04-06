@@ -1,12 +1,11 @@
 User.create name: 'Admin', status: :Ativo, kind: :Gerente, email: 'admin@teste.com', password: 123456
 User.create name: 'Leandro', status: :Ativo, kind: :Gerente, email: 'leandro@teste.com', password: 123456
 User.create name: 'Fernanda', status: :Ativo, kind: :Usuário, email: 'fernanda@teste.com', password: 123456
-User.create name: 'Wesley', status: :Ativo, kind: :Usuário, email: 'wesley@teste.com', password: 123456
+User.create name: 'Aparecida', status: :Ativo, kind: :Usuário, email: 'aparecida@teste.com', password: 123456
+User.create name: 'Ananias', status: :Ativo, kind: :Usuário, email: 'ananias@teste.com', password: 123456
 
 Balance.create name: 'Submarino', date: '01.05.2019', status: 0
 Balance.create name: 'Lojas Americanas', date: '01.05.2019', status: 1
-Balance.create name: 'Cical', date: '01.05.2019', status: 1
-Balance.create name: 'Fasam', date: '01.05.2019', status: 1
 
 ProductKind.create name: 'Agro, Indústri e Comércio', description: ''
 ProductKind.create name: 'Alimentos e Bebidas', description: ''
