@@ -9,9 +9,12 @@
         quantity: "Quantidade"
         description: "Descrição"
         damage: "Avaria"
+        balance: "Balanço"
         balance_id: "Balanço"
         product_kind_id: "Categoria"
+        product_kind: "Categoria"
         user_id: "Usuario"
+        user: "Usuario"
         true: "Sim"
         false: "Não" 
         
