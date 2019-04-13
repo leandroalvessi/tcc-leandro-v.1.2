@@ -2,10 +2,31 @@ User.create name: 'Admin', status: :Ativo, kind: :Gerente, email: 'admin@teste.c
 User.create name: 'Leandro', status: :Ativo, kind: :Gerente, email: 'leandro@teste.com', password: 123456
 User.create name: 'Fernanda', status: :Ativo, kind: :Usuário, email: 'fernanda@teste.com', password: 123456
 User.create name: 'Aparecida', status: :Ativo, kind: :Usuário, email: 'aparecida@teste.com', password: 123456
-User.create name: 'Ananias', status: :Ativo, kind: :Usuário, email: 'ananias@teste.com', password: 123456
+User.create name: 'Roberto', status: :Ativo, kind: :Usuário, email: 'robeto@teste.com', password: 123456
+User.create name: 'Wesley', status: :Ativo, kind: :Usuário, email: 'wesley@teste.com', password: 123456
+User.create name: 'Tiago', status: :Ativo, kind: :Usuário, email: 'tiago@teste.com', password: 123456
+User.create name: 'Rubia', status: :Ativo, kind: :Usuário, email: 'rubia@teste.com', password: 123456
+User.create name: 'Maiana', status: :Ativo, kind: :Usuário, email: 'maiana@teste.com', password: 123456
+User.create name: 'Paulo', status: :Ativo, kind: :Usuário, email: 'paulo@teste.com', password: 123456
+User.create name: 'Ricardo', status: :Ativo, kind: :Usuário, email: 'ricardo@teste.com', password: 123456
+User.create name: 'Maria', status: :Ativo, kind: :Usuário, email: 'maria@teste.com', password: 123456
+User.create name: 'Luiz', status: :Ativo, kind: :Usuário, email: 'luiz@teste.com', password: 123456
+User.create name: 'Tatiana', status: :Ativo, kind: :Usuário, email: 'tatiana@teste.com', password: 123456
 
 Balance.create name: 'Submarino', date: '01.05.2019', status: 0
-Balance.create name: 'Lojas Americanas', date: '01.05.2019', status: 1
+Balance.create name: 'Lojas Americanas', date: '06.05.2019', status: 1
+Balance.create name: 'Casas Bahia', date: '12.05.2019', status: 1
+Balance.create name: 'Novo Mundo', date: '01.08.2019', status: 1
+Balance.create name: 'Ricardo Electro', date: '01.07.2019', status: 1
+Balance.create name: 'Magazine Luiza', date: '01.05.2019', status: 1
+Balance.create name: 'Walmart', date: '01.05.2019', status: 1
+Balance.create name: 'Lojas Pernabucanas', date: '01.06.2019', status: 1
+Balance.create name: 'Ponto Frio', date: '17.05.2019', status: 1
+Balance.create name: 'Bretas', date: '01.09.2019', status: 1
+Balance.create name: 'Tatico', date: '22.05.2019', status: 1
+Balance.create name: 'Barão', date: '01.03.2019', status: 1
+Balance.create name: 'Mariza', date: '01.07.2019', status: 1
+
 
 ProductKind.create name: 'Agro, Indústri e Comércio', description: ''
 ProductKind.create name: 'Alimentos e Bebidas', description: ''
