@@ -6,7 +6,7 @@ ruby '2.5.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', group: :development
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -24,6 +24,11 @@ gem 'devise'
 gem 'cancancan'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'kaminari'
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 
 # Use CoffeeScript for .coffee assets and views
