@@ -54,4 +54,4 @@
       unlock_instructions:
         subject: 'Informações de desbloqueio' 
     shared:
-      minimum_password_length: 'Comprimento mínimo da senha'             
+      minimum_password_length: 'Comprimento mínimo da senha é 6 digitos'             
