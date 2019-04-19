@@ -13,7 +13,6 @@ class Ability
     elsif user.kind == 'Usuário' && user.status == 'Ativo'
       can :dashboard, :all
       can :access, :rails_admin
-      can :read, :all
     else
       can :dashboard, :all
       can :access, :rails_admin

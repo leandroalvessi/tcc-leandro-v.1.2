@@ -19,6 +19,9 @@ class User < ApplicationRecord
             field :status do
                 label 'Status'
             end
+            field :email do
+                label 'E-mail'
+            end
         end
     end
 end
