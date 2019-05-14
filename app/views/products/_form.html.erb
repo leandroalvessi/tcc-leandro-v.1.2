@@ -19,7 +19,7 @@
   <div class="form-group">
     <%= f.label :code, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :code, :required => true, :class => 'form-control' %>
+      <%= f.text_field :code, :required => true, :class => 'form-control', maxlength: '20' %>
     </div>
     <%=f.error_span(:code) %>
   </div>
@@ -43,7 +43,7 @@
   <div class="form-group">
     <%= f.label :description, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_area(:description, :required => true, :class => 'form-control', size: '50x5') %>
+      <%= f.text_area(:description, :required => true, :class => 'form-control', maxlength: '50',size: '50x5') %>
     </div>
     <%=f.error_span(:description) %>
   </div>
