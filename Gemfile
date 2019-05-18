@@ -24,9 +24,6 @@ gem 'devise'
 gem 'cancancan'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'kaminari'
-gem 'materializecss'
-gem 'jquery-rails'
-gem 'serviceworker-rails'
 
 group :production do
   gem 'pg'

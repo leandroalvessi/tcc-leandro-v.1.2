@@ -1,12 +1,11 @@
-
-<% model_class = Product %>
+<%- model_class = Product -%>
   <% if current_user.status == 'Ativo' %>
-    <div class="collection with-header">
-       <div class="collection-header"><h4><%=t '.title', :default => [:'helpers.titles.new', 'Novo %{model}'], :model => model_class.model_name.human.titleize %></h4></div>
+    <div class="page-header">
+      <h1><%=t '.title', :default => [:'helpers.titles.new', 'Novo %{model}'], :model => model_class.model_name.human.titleize %></h1>
     </div>
   <% else %>
-    <div class="collection with-header">
-      <div class="collection-header"><h4> Usuário <%= current_user.status %> </h4></div>
+    <div class="page-header">
+      <h1> Usuário <%= current_user.status %> </h1>
     </div>
   <% end %>  
 
