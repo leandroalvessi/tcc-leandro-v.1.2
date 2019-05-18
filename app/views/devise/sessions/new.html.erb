@@ -1,4 +1,6 @@
-<h1><%= t("devise.sessions.sign_in") %></h1>
+<div class="collection with-header">
+    <div class="collection-header"><h4> <%= t("devise.sessions.sign_in") %> </h4></div>
+</div>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-group">
