@@ -39844,3 +39844,841 @@ Processing by ProductsController#show as HTML
 Completed 200 OK in 76ms (Views: 65.9ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-05-18 09:39:09 -0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#new as HTML
+Completed 401 Unauthorized in 46ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-18 09:39:10 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (130.1ms)
+Started GET "/" for 127.0.0.1 at 2019-05-18 09:39:10 -0300
+Processing by ProductsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 7410ms (Views: 7384.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-18 09:39:17 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-18 09:39:18 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-18 09:39:19 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-18 09:39:19 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-18 09:39:19 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-18 09:39:20 -0300
+Started GET "/" for 127.0.0.1 at 2019-05-20 22:00:15 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#new as HTML
+Completed 401 Unauthorized in 101ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-20 22:00:16 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (8.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (145.8ms)
+Completed 200 OK in 2906ms (Views: 2851.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:00:20 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:00:22 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:00:22 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:00:22 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:00:22 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:01:17 -0300
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-20 22:02:29 -0300
+Processing by Devise::SessionsController#new as */*
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 147ms (Views: 143.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-05-20 22:03:57 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EfWAEGX2/v/2DxejVsImkA3jc/N4HLXPco2jMsMaf58O2TN078TzHpecavhbQqfhzlvN+37ORSPDHHxZN0PYNg==", "user"=>{"email"=>"leandro@teste.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (20.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "leandro@teste.com"], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 474ms (ActiveRecord: 20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-20 22:03:57 -0300
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBalance Load (13.5ms)[0m  [1m[34mSELECT "balances".* FROM "balances" WHERE "balances"."status" = ?[0m  [["status", 0]]
+  ↳ app/views/products/_form.html.erb:63
+  [1m[36mProductKind Load (2.2ms)[0m  [1m[34mSELECT "product_kinds".* FROM "product_kinds"[0m
+  ↳ app/views/products/_form.html.erb:71
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/products/_form.html.erb:88
+  Rendered products/_form.html.erb (153.1ms)
+  Rendered products/new.html.erb within layouts/application (169.7ms)
+Completed 200 OK in 352ms (Views: 244.6ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:03:58 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:04:00 -0300
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:04:08 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (4.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.5ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.4ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (196.9ms)
+Completed 200 OK in 289ms (Views: 269.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:04:27 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.2ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 168ms (Views: 160.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2019-05-20 22:04:31 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:79
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:22
+  Rendered products/show.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 159ms (Views: 139.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:04:43 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.2ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (89.4ms)
+Completed 200 OK in 239ms (Views: 231.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:05:16 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.3ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.2ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 130ms (Views: 120.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2019-05-20 22:05:18 -0300
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBalance Load (0.3ms)[0m  [1m[34mSELECT "balances".* FROM "balances" WHERE "balances"."status" = ?[0m  [["status", 0]]
+  ↳ app/views/products/_form.html.erb:63
+  [1m[36mProductKind Load (0.4ms)[0m  [1m[34mSELECT "product_kinds".* FROM "product_kinds"[0m
+  ↳ app/views/products/_form.html.erb:71
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/products/_form.html.erb:88
+  Rendered products/_form.html.erb (15.0ms)
+  Rendered products/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 103ms (Views: 95.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:06:14 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.5ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 113ms (Views: 105.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products/7/edit" for 127.0.0.1 at 2019-05-20 22:06:19 -0300
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:79
+  Rendering products/edit.html.erb within layouts/application
+  [1m[36mBalance Load (0.3ms)[0m  [1m[34mSELECT "balances".* FROM "balances" WHERE "balances"."status" = ?[0m  [["status", 0]]
+  ↳ app/views/products/_form.html.erb:63
+  [1m[36mProductKind Load (0.4ms)[0m  [1m[34mSELECT "product_kinds".* FROM "product_kinds"[0m
+  ↳ app/views/products/_form.html.erb:71
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/products/_form.html.erb:88
+  Rendered products/_form.html.erb (27.0ms)
+  Rendered products/edit.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 142ms (Views: 126.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:06:24 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 105ms (Views: 100.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2019-05-20 22:06:38 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:79
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:22
+  Rendered products/show.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 106ms (Views: 102.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2019-05-20 22:07:11 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:79
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mProductKind Load (0.4ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:22
+  Rendered products/show.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 112ms (Views: 104.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:07:12 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:07:14 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:07:14 -0300
+Started GET "/products/7" for 127.0.0.1 at 2019-05-20 22:07:17 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:79
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBalance Load (0.3ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mProductKind Load (0.2ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:22
+  Rendered products/show.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 166ms (Views: 159.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:07:17 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:07:19 -0300
+Started GET "/products/7" for 127.0.0.1 at 2019-05-20 22:07:33 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:79
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:22
+  Rendered products/show.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 166ms (Views: 149.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:07:33 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:07:35 -0300
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:07:40 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 108ms (Views: 103.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2019-05-20 22:07:45 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:79
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mProductKind Load (0.2ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:22
+  Rendered products/show.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 143ms (Views: 133.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2019-05-20 22:08:08 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:79
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:22
+  Rendered products/show.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 177ms (Views: 167.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:08:09 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:08:12 -0300
+Started GET "/products/7" for 127.0.0.1 at 2019-05-20 22:08:24 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:79
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:22
+  Rendered products/show.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 154ms (Views: 141.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:08:24 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:08:26 -0300
+Started GET "/products/new" for 127.0.0.1 at 2019-05-20 22:08:41 -0300
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBalance Load (0.3ms)[0m  [1m[34mSELECT "balances".* FROM "balances" WHERE "balances"."status" = ?[0m  [["status", 0]]
+  ↳ app/views/products/_form.html.erb:63
+  [1m[36mProductKind Load (0.5ms)[0m  [1m[34mSELECT "product_kinds".* FROM "product_kinds"[0m
+  ↳ app/views/products/_form.html.erb:71
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/products/_form.html.erb:88
+  Rendered products/_form.html.erb (25.4ms)
+  Rendered products/new.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 123ms (Views: 117.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:08:53 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (61.3ms)
+Completed 200 OK in 191ms (Views: 184.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:09:23 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.2ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 126ms (Views: 122.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:09:24 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:09:25 -0300
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:09:30 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (66.6ms)
+Completed 200 OK in 171ms (Views: 166.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:09:31 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:09:33 -0300
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-05-20 22:09:41 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PTu3/sgpGoZklURBzZRR1liO88GMMUGyGWy5QGpvhZocQUPcqir9WOoTk5bgmHXkwPeFWdql55/Jn9Z+aRi3Fg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 58ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-20 22:09:41 -0300
+Processing by ProductsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-20 22:09:41 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 115ms (Views: 113.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:09:42 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:09:44 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:09:44 -0300
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-05-20 22:09:50 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uw7XDrkl0FKS4cTinYVCq1ehrp7OY6fm+DGX3x/mvzk6DkSVWe+xcwb1Svdp3G/2HBMq/Rfw3WS/R0hb5trLpQ==", "user"=>{"email"=>"leandro@teste.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "leandro@teste.com"], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 224ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-20 22:09:50 -0300
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT "balances".* FROM "balances" WHERE "balances"."status" = ?[0m  [["status", 0]]
+  ↳ app/views/products/_form.html.erb:63
+  [1m[36mProductKind Load (0.4ms)[0m  [1m[34mSELECT "product_kinds".* FROM "product_kinds"[0m
+  ↳ app/views/products/_form.html.erb:71
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/products/_form.html.erb:88
+  Rendered products/_form.html.erb (20.6ms)
+  Rendered products/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 142ms (Views: 135.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:09:50 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:09:52 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:09:52 -0300
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:09:55 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.8ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (84.0ms)
+Completed 200 OK in 260ms (Views: 249.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:10:04 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 130ms (Views: 123.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:10:08 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 127ms (Views: 122.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entrar" for 127.0.0.1 at 2019-05-20 22:10:14 -0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "balances"[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" ORDER BY "balances"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (18.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "product_kinds"[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProductKind Load (0.2ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" ORDER BY "product_kinds"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (50.5ms)
+  Rendered /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (16.7ms)
+  Rendered /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (30.4ms)
+  Rendered /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (14.5ms)
+  Rendering /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (19.9ms)
+Completed 200 OK in 5002ms (Views: 1588.4ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/entrar" for 127.0.0.1 at 2019-05-20 22:10:19 -0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "balances"[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" ORDER BY "balances"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "product_kinds"[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" ORDER BY "product_kinds"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (53.1ms)
+  Rendered /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.4ms)
+  Rendered /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (20.7ms)
+  Rendered /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.7ms)
+  Rendering /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (8.7ms)
+Completed 200 OK in 540ms (Views: 491.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:10:23 -0300
+Started GET "/entrar/product?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2019-05-20 22:10:24 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"product"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY products.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT "balances".* FROM "balances" WHERE "balances"."id" = ?[0m  [["id", 3]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProductKind Load (0.2ms)[0m  [1m[34mSELECT "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ?[0m  [["id", 39]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (177.9ms)
+Completed 200 OK in 237ms (Views: 223.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-20 22:11:00 -0300
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT "balances".* FROM "balances" WHERE "balances"."status" = ?[0m  [["status", 0]]
+  ↳ app/views/products/_form.html.erb:63
+  [1m[36mProductKind Load (0.3ms)[0m  [1m[34mSELECT "product_kinds".* FROM "product_kinds"[0m
+  ↳ app/views/products/_form.html.erb:71
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/products/_form.html.erb:88
+  Rendered products/_form.html.erb (23.5ms)
+  Rendered products/new.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 124ms (Views: 110.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:11:00 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:11:02 -0300
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:11:03 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (71.7ms)
+Completed 200 OK in 167ms (Views: 161.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2019-05-20 22:11:33 -0300
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:23
+  [1m[36mBalance Load (0.1ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mProductKind Load (0.2ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  [1m[36mCACHE Balance Load (0.0ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:31
+  [1m[36mCACHE ProductKind Load (0.0ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:33
+  Rendered products/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 131ms (Views: 125.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:11:33 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:11:36 -0300
+Started GET "/products/7" for 127.0.0.1 at 2019-05-20 22:11:39 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:79
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mProductKind Load (0.1ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:22
+  Rendered products/show.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 148ms (Views: 140.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2019-05-20 22:12:26 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/leandroalves/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:79
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBalance Load (0.2ms)[0m  [1m[34mSELECT  "balances".* FROM "balances" WHERE "balances"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mProductKind Load (0.9ms)[0m  [1m[34mSELECT  "product_kinds".* FROM "product_kinds" WHERE "product_kinds"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:22
+  Rendered products/show.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 127ms (Views: 115.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2019-05-20 22:12:26 -0300
+Started GET "/serviceworker.js" for 127.0.0.1 at 2019-05-20 22:12:28 -0300
