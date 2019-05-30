@@ -4,7 +4,7 @@ class Product < ApplicationRecord
   belongs_to :user
 
   validates :code, :unit_of_measurement, :quantity, presence: true
-
+  #validates :quantity, :numericality => { :greater_than_or_equal_to => 0 } VALIDA APENAS NUMEROS POSITIVOS.
   validates :quantity, format: { with: /\A[+\-]?\d+\z/,        
     message: "é Permitido apanas numeros"} 
     

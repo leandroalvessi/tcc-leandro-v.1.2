@@ -35,7 +35,7 @@
   <div class="form-group">
     <%= f.label :quantity, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.number_field :quantity, :required => true, :class => 'form-control' %>
+      <%= f.number_field :quantity, :required => true, :min => "0", :oninput=> "this.value = Math.abs(this.value)" , :class => 'form-control' %>
     </div>
     <%=f.error_span(:quantity) %>
   </div>
