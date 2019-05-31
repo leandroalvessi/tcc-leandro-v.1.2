@@ -188,7 +188,7 @@ pt-BR:
   views:
   admin:
     home:
-      name: Home
+      name: Contagem
     pagination:
       previous: "&laquo; Anterior"
       next: "Próximo &raquo;"
@@ -217,8 +217,9 @@ pt-BR:
       model_not_found: "Modelo '%{model}' não encontrado "
       object_not_found: "%{model} com identificador '%{id}' não encontrado"
     table_headers:
-      model_name: "Nome do modelo"
+      model_name: "Modelo"
       last_used: "Última vez usado em"
+      last_created: "Última criação"
       records: "Registros"
       username: "Usuário"
       changes: "Alterações"
@@ -227,9 +228,9 @@ pt-BR:
       message: "Mensagem"
     actions:
       dashboard:
-        title: "Administração do Encontro"
-        menu: "Dashboard"
-        breadcrumb: "Dashboard"
+        title: "Administração Gerencial"
+        menu: "Painel de Controle"
+        breadcrumb: "Painel de Controle"
       index:
         title: "Lista de %{model_label_plural}"
         menu: "Lista"
